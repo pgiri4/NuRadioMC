@@ -9,6 +9,20 @@ logger = logging.getLogger("SignalGen.askaryan")
 gARZ = None
 
 def set_log_level(level):
+    """
+    convenience function setting the logger level for both logger
+    and all function parameters
+
+    Parameters
+    ----------
+    level : python logger level
+        DEBUG: 10
+        INFO: 20
+        WARNING: 30
+        ERROR: 40
+        CRITICAL: 50
+
+    """
     logger.setLevel(level)
     par.set_log_level(level)
 
