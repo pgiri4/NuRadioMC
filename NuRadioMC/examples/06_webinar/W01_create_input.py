@@ -99,6 +99,5 @@ filename = 'input_{:.1e}_{:.1e}.hdf5'.format(Emin, Emax)
 And we call the function to generate the events.
 """
 generate_eventlist_cylinder(filename, n_events, Emin, Emax,
-                            volume,
-                            thetamin=thetamin, thetamax=thetamax,
+                            volume, fiducial_rmin, fiducial_rmax, fiducial_zmin, fiducial_zmax, thetamin=thetamin, thetamax=thetamax,
                             flavor=flavor)
